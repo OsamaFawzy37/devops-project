@@ -1,11 +1,11 @@
-FROM node:20-alpine
+FROM nginx:alpine AS builder
 
 WORKDIR /app
 
-COPY package.json .
+COPY ./public ./usr/share/nginx/html
 
-RUN npm install
+COPY ./nginx.conf /etc/nginx/nginx.conf
 
-COPY . .
+EXPOSE 80
 
-CMD ["npm", "start"]
+CMD ["nginx", "-g", "daemon off;"]
