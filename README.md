@@ -1,4 +1,4 @@
-# Ashour Chat Tutorial — 3-Tier Student Project
+# Osama Chat Tutorial — 3-Tier Student Project
 
 A **multi-service** app (Reaction Wall + Mood of the Day) with **sign-in**: the UI is branded **"Ashour Chat Tutorial"** and uses a single **menu bar** (Sign in | Sign up when logged out; Reaction Wall | Mood | Hello, username | Log out when logged in). Both posting reactions and voting mood **require sign-in**. Built to teach **3-tier architecture**, **Kubernetes**, **Redis** (cache), and **MySQL** (persistence). Backend is **2 microservices** (reactions, mood) that call each other via Kubernetes Services.
 
